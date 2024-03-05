@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/LOGO SVG.svg" alt="Logo letra a">
+        <h1 class="title">Decodificador</h1>
+    </header>
+    <div class="main_section">
+        <section class="main_bloc1">
+            <div class="container_text_area">
+                <textarea name="" id="text_area" cols="10" rows="10" placeholder="Digite seu texto"></textarea>
+                <div class="container_alert">
+                    <img src="./assets/alert_icon.svg" alt="icone de alerta">
+                    <label class="text_alert" for="text_area">Apenas letras minúsculas e sem acento</label>
+                </div>
+            </div>
+            <div class="container_btn">
+                <button onclick="btn_criptografar()" class="cripto_btn">Criptografar</button>
+                <button onclick="btn_descriptografar()" class="descripto_btn">Descriptografar</button>
+            </div>
+        </section>
+        <section class="main_bloc2">
+            <div class="message_search" id="message_search_div">
+                <img class="img_woman" id="img_woman" src="./assets/High quality products 1 1.svg" alt="">
+                <p class="title_search">Nenhuma mensagem encontrada</p>
+                <p class="subtitle_search">Digite um texto que você quer criptografar ou descriptografar</p>
+            </div>
+            <div class="textarea_container">
+                <textarea name="message_area" id="message_area" cols="10" rows="10"></textarea>
+            </div>
+            <button onclick="btn_Copiar()" class="copy_btn">Copiar</button>
+        </section>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
